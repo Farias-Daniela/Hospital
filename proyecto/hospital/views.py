@@ -1,8 +1,7 @@
 from django.shortcuts import render
 
-from django.http import HttpResponse
 
-def oftalmologia(xx):
-    return HttpResponse("Hola, tiene bien sus ojos?")
-
+def oftalmologia(request):
+    #return HttpResponse("Hola, tiene bien sus ojos?")
+    return render(request, "hospital/oftalmologia.html")
 # Create your views here.

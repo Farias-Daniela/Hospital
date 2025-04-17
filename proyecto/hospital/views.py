@@ -36,7 +36,17 @@ def pediatria(request):
 
     contexto = {
         "pediatras": xx
+        "cirujia": xx
+        "psiquiatria": xx
     }
     return render(request, "hospital/pediatria.html", context=contexto)
+
+def cirujia(request):
+    return render(request, "hospital/cirujia.html", context=contexto)
+
+def psiquiatria(request):
+    return render(request, "hospital/psiquiatria.html", context=contexto)
+
+
 
 # Create your views here.

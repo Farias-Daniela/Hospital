@@ -35,9 +35,9 @@ def pediatria(request):
     ]
 
     contexto = {
-        "pediatras": xx
-        "cirujia": xx
-        "psiquiatria": xx
+        "pediatras": xx,
+        "cirujia": xx,
+        "psiquiatria": xx,
     }
     return render(request, "hospital/pediatria.html", context=contexto)
 
